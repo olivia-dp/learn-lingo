@@ -1,0 +1,65 @@
+.header {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px 0;
+    align-items: center;
+}
+.logoBox {
+    display: flex;
+    align-items: center; 
+    gap: 8px;
+
+}
+.svg {
+    width: 28px;
+    height: 28px;
+
+}
+.logo {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 120%;
+    letter-spacing: -0.02em;
+    color: #121417;
+}
+.nav {
+    display: flex;
+    gap: 28px;
+}
+.link {
+    font-weight: 400;
+font-size: 16px;
+line-height: 125%;
+color: #121417;
+}
+.btnBox {
+    display: flex;
+    gap: 16px;
+}
+.logBtn {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-weight: 700;
+font-size: 16px;
+line-height: 125%;
+color: #121417;
+background-color: transparent;
+}
+
+.icon {
+    color: #E0A39A;
+    width: 20px;
+    height: 20px;
+}
+.regBtn {
+    border-radius: 12px;
+padding: 14px 39px;
+width: 166px;
+height: 48px;
+background: #121417;
+font-weight: 700;
+font-size: 16px;
+line-height: 125%;
+color: #fff;
+}

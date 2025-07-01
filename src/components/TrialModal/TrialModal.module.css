@@ -1,0 +1,180 @@
+
+.backdrop {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.4);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+  }
+  
+  .modal {
+    background: white;
+    padding: 64px;
+    border-radius: 30px;
+    width: 100%;
+    max-width: 600px;
+    position: relative;
+  }
+  
+  .closeBtn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: transparent;
+    border: none;
+    font-size: 32px;
+    font-weight: 700;
+    cursor: pointer;
+    color: #121417;
+  }
+  
+  .title {
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 120%;
+    letter-spacing: -0.02em;
+    color: #121417;
+    margin-bottom: 20px;
+  }
+  
+  .desc {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 137%;
+    color: rgba(18, 20, 23, 0.8);
+    margin-bottom: 20px;
+  }
+  
+  .teacher {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    margin-bottom: 40px;
+  }
+  
+  .avatar {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  
+  .label {
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 133%;
+    color: #8a8a89;
+  }
+  
+  .name {
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 150%;
+    color: #121417;
+  }
+  
+  .form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+  
+  .question {
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 133%;
+    color: #121417;
+    margin-bottom: 20px;
+  }
+  
+  .radio {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 137%;
+    text-align: center;
+    color: #121417;
+    margin-bottom: 24px;
+    position: relative;
+    cursor: pointer;
+  }
+  
+  /* скрываем только радиоинпут */
+  .radio input[type="radio"] {
+    opacity: 0;
+    position: absolute;
+    width: 0;
+    height: 0;
+  }
+  
+  .customRadio {
+    width: 20px;
+    height: 20px;
+    border: 2px solid #888;
+    border-radius: 50%;
+    display: inline-block;
+    position: relative;
+    transition: border 0.2s ease;
+  }
+  .radio input[type="radio"]:checked + .customRadio {
+    border: 2px solid #e0a39a;
+  }
+
+  .radio input[type="radio"]:checked + .customRadio::after {
+    content: "";
+    width: 10px;
+    height: 10px;
+    background-color: #e0a39a;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  
+  .input {
+    border: 1px solid rgba(18, 20, 23, 0.1);
+    border-radius: 12px;
+    padding: 16px 18px;
+    width: 472px;
+    height: 54px;
+    font-family: var(--font-family);
+font-weight: 400;
+font-size: 16px;
+line-height: 137%;
+color: #121417;
+  }
+  .input:focus {
+    border-color: #e0a39a;
+  }
+  
+  .bookBtn {
+    margin-top: 24px;
+    padding: 14px;
+    border: none;
+    background: #e0a39a;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+  }
+  .bookBtn:hover {
+    background: #f2c0bd;
+  }
+
+  .error {
+    font-size: 12px;
+    color: #d32f2f;
+    font-weight: 600;
+  }

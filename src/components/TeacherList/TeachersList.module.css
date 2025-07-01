@@ -1,0 +1,30 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.list {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.loadMoreBtn {
+    margin-top: 20px;
+    border-radius: 12px;
+padding: 16px 48px;
+width: 183px;
+height: 60px;
+background: #e0a39a;
+font-family: var(--font-family);
+font-weight: 700;
+font-size: 18px;
+line-height: 156%;
+color: #121417;
+
+}
+.loadMoreBtn:hover {
+background: #f2c0bd;
+
+}

@@ -1,0 +1,120 @@
+.heroSection {
+max-width: 1312px;
+margin: 0 auto;
+}
+.topHero {
+    display: flex;
+    gap: 24px;
+    justify-content: space-between;
+    margin-bottom: 24px;
+}
+.heroInfo {
+    height: 530px;
+    padding-top: 98px;
+    padding-left: 64px;
+}
+.title {
+    width: 548px;
+    font-weight: 500;
+font-size: 48px;
+line-height: 117%;
+letter-spacing: -0.02em;
+color: #121417;
+margin-bottom: 32px;
+}
+.heroImg {
+    height: 530px;
+    overflow: hidden;
+    border-radius: 30px;
+}
+.img {
+    width: 100%;
+    height: 100%;
+    
+}
+.accent {
+    font-style: italic;
+font-weight: 400;
+position: relative;
+
+}
+.accent::before {
+    content: "";
+    position: absolute;
+    width: 195px;
+    height: 40px;
+    background-color: #ffdbdb;
+    border-radius: 12px;
+    z-index: -1;
+    top: 10px;
+    left: -8px;
+}
+.textInfo {
+    width: 471px;
+    font-family: var(--font-family);
+font-weight: 400;
+font-size: 16px;
+line-height: 137%;
+letter-spacing: -0.02em;
+color: #121417;
+margin-bottom: 64px;
+}
+.button {
+    border-radius: 12px;
+padding: 16px 88px;
+width: 267px;
+height: 60px;
+background: #e0a39a;
+font-family: var(--font-family);
+font-weight: 700;
+font-size: 18px;
+line-height: 156%;
+color: #121417;
+}
+.button:hover
+.button:focus {
+    background: #f2c0bd;
+}
+
+
+
+.statistBox {
+    width: 100%;
+    border-radius: 30px;
+    position: relative;
+  }
+
+  .svg {
+    position: absolute;
+    width: 100%;
+  }
+
+  
+  .statList {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    padding: 40px 122px;
+  }
+  
+
+.listItem {
+    display: flex;
+}
+.statNumber {
+    font-weight: 500;
+font-size: 28px;
+line-height: 114%;
+letter-spacing: -0.02em;
+color: #121417;
+width: 100%;
+}
+.statText {
+    width: 96px;
+    font-weight: 400;
+font-size: 14px;
+line-height: 129%;
+letter-spacing: -0.02em;
+color: rgba(18, 20, 23, 0.7);
+}
