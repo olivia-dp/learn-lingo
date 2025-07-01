@@ -60,9 +60,6 @@ Validation via Yup
 Incorrect input disables the submit button
 
 📁 Project Structure (simplified)
-css
-Копировать
-Редактировать
 src/
 ├── components/
 │   ├── TeacherCard
@@ -78,6 +75,8 @@ src/
 ├── firebase/
 │   └── firebase.js
 └── App.jsx
+
+
 🌐 Navigation
 / — Home page
 
