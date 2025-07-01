@@ -6,6 +6,7 @@ import { openLogInModal, openRegisterModal } from "../../redux/modal/slice";
 import { selectIsAuth } from "../../redux/auth/selectors";
 import { logoutUser } from "../../firebase/auth/auth";
 import {clearUser} from "../../redux/auth/slice";
+import { clearFavorites } from "../../redux/favorite/slice";
 
 
 
@@ -14,11 +15,12 @@ const NavBar = () => {
   const dispatch = useDispatch();
   const isAuth = useSelector(selectIsAuth);
 
+  
   const handleLogout = async () => {
     await logoutUser(); 
     dispatch(clearUser()); 
+    dispatch(clearFavorites()); 
   };
-  
 
   return (
     <header className={s.header}>

@@ -97,8 +97,8 @@ const TeacherCard = ({ teacher, isExpanded, onToggle }) => {
           </button>
         </div>
         <ul className={s.levelList}>
-          {levels.map((item) => (
-            <li key={item.id} className={s.levelsItem}>
+          {levels.map((item, i) => (
+            <li key={i} className={s.levelsItem}>
               <p>#{item}</p>
             </li>
           ))}
@@ -109,8 +109,8 @@ const TeacherCard = ({ teacher, isExpanded, onToggle }) => {
             <p className={s.experience}>{experience}</p>
 
             <ul className={s.reviews}>
-              {reviews.map((item) => (
-                <li key={item.id} className={s.review}>
+              {reviews.map((item, i) => (
+                <li key={i} className={s.review}>
                   <div className={s.reviewer}>
                     {item?.photo ? (
                       <img

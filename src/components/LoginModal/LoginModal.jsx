@@ -67,7 +67,7 @@ const LoginModal = () => {
                 autoComplete="current-password"
               />
               <svg className={s.eyeIcon} onClick={() => setPasswordVisible(!passwordVisible)}>
-                <use href={`/icons.svg#${passwordVisible ? "icon-eye" : "icon-eye-blocked"}`} />
+                <use href={`/symbol-defs.svg#${passwordVisible ? "icon-eye" : "icon-eye-blocked"}`} />
               </svg>
             </div>
             {errors.password && <p className={s.error}>{errors.password.message}</p>}
